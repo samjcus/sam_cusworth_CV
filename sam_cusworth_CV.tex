@@ -1,0 +1,184 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Sam}{Cusworth}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{Alan Turing Building, University of Manchester}{M13 9PL Manchester}{U.K.}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+44(0)~7837~413~220}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{samuel.cusworth@manchester.ac.uk}                               % optional, remove / comment the line if not wanted
+%\homepage{www.jb.man.ac.uk/~cusworth}                 % optional, remove / comment the line if not wanted
+%\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{samjcus}                          % optional, remove / comment the line if not wanted
+%social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+%extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Professional Profile}
+I am in the final year of my PhD in theoretical astrophysics, studying the formation and growth of clusters of galaxies using simulations. 
+During my MPhys degree and PhD I have demonstrated an aptitude for problem solving using analytic and numerical techniques. 
+In addition I have proven myself able to communicate infomation in writen form and in oral presentations.
+I am looking to use the skills and techniques I've developed as a researcher in a new field of interest.
+%successfully developed the skills of a numerically oriented researcher and I am ready to apply my skills and expertise to new fields of interest.
+
+\section{Education}
+\cventry{2012--Present}{PhD Astronomy and Astrophysics}{Jodrell Bank Centre for Astrophysics}{Manchester}{\textit{Expected Completion: October 2015}}{}
+\cventry{2008--2012}{MPhys (Hons) Physics with Astrophysics}{University of Manchester}{Manchester}{\textit{1st Class Honours, Ranked second in year group}}{}
+\cventry{2006--2008}{Secondary Education}{North Berwick High School}{North Berwick}{\textit{SQA Highers (6As) \& SQA Advanced Highers (3As)}}{}
+\section{Software}
+During my PhD, I wrote software for large ($\sim1000^3$ element) numerical simulations.
+In particular I modified an existing massively parallel $N$-body simulation code to solve the equations of motion of alternative models of gravity.
+Also I wrote software to analyse and visualise the results of simulations.
+\newline
+\newline
+\cvitem{Languages}{Experienced in C and Python. Proficient in C++, FORTRAN and IDL}
+\cvitem{Libraries}{Experienced using Message Passing Interface (MPI) libraries. Familiarity with CUDA and OpenMP libraries}
+\cvitem{Packages}{Mathematica}
+\cvitem{Computer Admin}{Experienced in UNIX, \LaTeX \& Emacs}
+
+
+\section{Skills}
+\cvitem{Problem Solving}{
+%During my MPhys and PhD degrees I developed strong analytical and numerical skills.
+%In particular I have a passion and a proven aptitude for mathematics, physics and computing.
+%\newline
+  As an undergraduate student I sought out the most mathematically challenging courses available and actively pursued computational challenges.
+  \newline
+  During my PhD I developed software for numerical simulations on parallel architectures.
+  As part of the software development process I have run these codes on the DiRAC national computing facility.}
+
+\cvitem{Teamworking}{
+While the writing of a PhD thesis is largely a solitary process, the development of the work within my thesis has been rather collaborative in nature.
+Working in collaboration with academics from the my department in Manchester, the UK and across the world I lead a project to compare the results of similar simulations from different research groups.
+I also worked on other projects with my direct supervisors during my PhD, many of which lead to journal articles and conference talks.
+In the development of my codebase I was fortunate enough to collaborate with postdoctorial staff and other students in my department. 
+%\newline
+%As well as working with colleagues at higher levels, I have also collaborated with other students on small projects and in sharing roles of responsibility.
+}
+
+\cvitem{Communication}{
+A crucial component of my research has been the communication of important results and conclusions.
+In this respect I have given talks to professional and public audiences.
+As part of my doctorial studies I wrote reports for supervisors and collaborators as well as journal articles aimed at the wider research community.\newline
+In addition I have given talks to scientific and general audiences, including astronomy societies, on a variety of topics.
+My role as a teaching assistant has given me the chance to tutor first year undergraduates through courses on mathematics, astronomy and thermodynamics.}
+
+\cvitem{Organisational}{
+In collaboration with another postgraduate student I founded and run a series of informal lectures on various computing topics.
+In addition I represented postgraduates in my institute by acting as an academic liaison between staff and students.
+While carrying out my MPhys degree and PhD I also held my role as Cub Scout Leader.
+This role involves leading the group, shaping the programme and managing my assistant leaders.}
+
+\section{Work Experience}
+\cventry{2012--Present}{Teaching Assistant}{School of Physics and Astronomy}{University of Manchester}{}{}
+
+\cventry{2009--Present}{Cub Scout Leader}{23rd Manchester Scout Group}{Scout Association}{\textit{(Voluntary)}}{}
+
+\cventry{2012--2014}{Postgraduate Rep}{Jodrell Bank Centre for Astrophysics}{University of Manchester}{\textit{(Voluntary)}}{}
+
+\cventry{2010}{Student Associate}{Cardinal Langley RC High School}{Middleton}{}{}
+
+\cventry{2009--2010}{General Assistant}{Leuchie House Respite Centre}{MS Society Scotland}{\textit{(Voluntary for first Summer)}}{}
+
+\cventry{2008}{Customer Assistant}{Lothian, Angus and Borders Cooperative}{North Berwick}{}{}
+
+\section{Honours and Awards}
+\cventry{2012--2015}{President's Doctoral Scholar Award}{University of Manchester}{Elite scholarship for outstanding PhD students}{}{}
+\cventry{2012}{Samuel Bright Research Scholarship in Physical Science}{University of Manchester}{Awarded for academic excellence in physics \& astronomy by the University of Manchester}{}{}
+\cventry{2011}{RAS Undergraduate Research Bursary}{Royal Astronomical Society}{Support to carry out a summer research project at the Jodrell Bank Centre for Astrophysics}{}{}
+
+\section{References}
+References available on request.
+% \begin{cvcolumns}
+%   \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%   \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%   \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+% \end{cvcolumns}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications} 
+% 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+% \clearpage
+% %-----       letter       ---------------------------------------------------------
+% % recipient data
+% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+% \date{January 01, 1984}
+% \opening{Dear Sir or Madam,}
+% \closing{Yours faithfully,}
+% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+% \makelettertitle
+
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+% Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+% Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+% Albert Einstein discovered that $e=mc^2$ in 1905.
+
+% \[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+% \makeletterclosing
+
+% %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+% %% end of file `template.tex'.
